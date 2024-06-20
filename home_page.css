@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Netflix Sans', sans-serif;
+    background-color: #111;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    background-color: #111;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    padding: 20px 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    transition: all .5s ease-in;
+}
+
+.nav.active {
+    background-color: #111;
+   
+}
+
+.nav_left {
+    margin-left: 10px;
+}
+
+.nav_logo {
+    width: 180px;
+    
+}
+
+.nav_right {
+    position: fixed;
+    right: 30px;
+    display: flex;
+    margin-right: 10px;
+}
+
+.nav_avatar {
+    width: 40px;
+}
+
+#banner {
+    color: white;
+    object-fit: contain;
+    height: 644px;
+    background-position: center center;
+    background-size: cover;
+}
+
+#banner_contents {
+    margin-left: 70px;
+    padding-top: 340px;
+    height: 190px;
+}
+
+#banner_title {
+    font-size: 3rem;
+    font-weight: 800;
+    padding-bottom: 0.3rem;
+}
+
+#banner_description {
+    width: 45rem;
+    line-height: 1.5;
+    padding-top: 1rem;
+    font-size: 0.9rem;
+    max-width: 360px;
+    height: 80px;
+}
+
+.banner_button {
+    cursor: pointer;
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 0.2vw;
+    padding: 0.5rem 2rem;
+    margin: 1rem 1rem 1rem 0;
+    background-color: rgba(51, 51, 51, 0.5);
+}
+
+.banner_button:hover {
+    color: black;
+    background-color: #e6e6e6;
+    transition: all 0.3s;
+}
+
+#banner_fadebottom {
+    height: 7.4rem;
+    background: linear-gradient(
+        180deg,
+        transparent,
+        rgba(37, 37, 37, 0.61),
+        #111
+    );
+}
+
+.row {
+    margin-left: 20px;
+    color: white;
+}
+
+.row_posters {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+}
+
+.row_posters::-webkit-scrollbar {
+    display: none;
+}
+
+.row_poster {
+    object-fit: contain;
+    width: 100%;
+    max-height: 120px;
+    margin-right: 10px;
+    transition: transform 500ms;
+}
+
+.row_poster:hover {
+    transform: scale(1.08);
+}
+
+.row_posterLarge {
+    object-fit: contain;
+    width: 100%;
+    max-height: 250px;
+    margin-right: 10px;
+    transition: transform 500ms;
+}
+
+.row_posterLarge:hover {
+    transform: scale(1.09);
+    opacity: 1;
+}
